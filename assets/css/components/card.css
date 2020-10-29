@@ -6,7 +6,22 @@
     position: relative;
     margin-bottom: 8px;
     overflow: hidden;
+    cursor: pointer;
   }
+
+    .card_img_top::after {
+      position: absolute;
+      background-image: url('../../../assets/images/icon-youtube-play.png');
+      background-size: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      width: 50px;
+      height: 35px;
+      content: "";
+      transition: all 400ms ease;
+    }
 
     .card_img_top > img {
       width: 100%;
@@ -17,6 +32,13 @@
     .card:hover > .card_img_top > img {
       transform: scale(1.1);
       filter:brightness(0.8);
+    }
+
+    .card:hover > .card_img_top::after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
     }
 
     .card_img_top > span {
