@@ -1,0 +1,63 @@
+.slingshot_stories {
+  position: relative;
+  background-color: transparent;
+  padding-top: 80px;
+}
+
+  .slingshot_stories__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .slingshot_stories__hero {
+    background-color: white;
+    padding: 100px 0 40px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .hero__logo {
+      padding-bottom: 40px;
+    }
+
+    .cards_container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 206px);
+      grid-auto-rows: auto;
+      grid-auto-flow: dense;
+      grid-gap: 10px;
+      grid-row-gap: 20px;
+
+      justify-content: center;
+      width: 100%;
+    }
+
+@media (max-width: 760px) {
+  .slingshot_stories {
+    padding-top: 50px;
+  }
+
+    .slingshot_stories__hero {
+      padding: 60px 0 40px 0;
+    }
+
+      .hero__logo {
+        width: 188px;
+        padding-bottom: 40px;
+      }
+
+      .cards_container {
+        grid-template-columns: repeat(auto-fill, 360px);
+      }
+}
+
+@media (max-width: 500px) {
+  .slingshot_stories {
+    padding-top: 30px;
+  }
+}

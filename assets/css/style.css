@@ -6,5 +6,6 @@
 @import './utils/fontWeight.css';
 @import './utils/margin.css';
 
+@import './components/card.css';
 
 @import './pages/index.css';
