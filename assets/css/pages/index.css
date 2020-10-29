@@ -37,7 +37,7 @@
       width: 100%;
     }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .slingshot_stories {
     padding-top: 50px;
   }
@@ -60,4 +60,24 @@
   .slingshot_stories {
     padding-top: 30px;
   }
+}
+
+@media (max-width: 400px) {
+  .slingshot_stories {
+    padding-top: 25px;
+  }
+
+    .slingshot_stories__hero {
+      padding: 40px 0 20px 0;
+    }
+
+      .hero__logo {
+        width: 188px;
+        padding-bottom: 35px;
+      }
+
+      .cards_container {
+        padding: 0 10px;
+        grid-template-columns: 1fr;
+      }
 }
