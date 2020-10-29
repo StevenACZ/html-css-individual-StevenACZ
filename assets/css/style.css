@@ -1,11 +1,6 @@
 @import './base/typography.css';
 @import './base/global.css';
 
-@import './utils/flex.css';
-@import './utils/fontSize.css';
-@import './utils/fontWeight.css';
-@import './utils/margin.css';
-
 @import './components/card.css';
 
 @import './pages/index.css';
