@@ -23,6 +23,8 @@
 
     .hero__logo {
       padding-bottom: 40px;
+      width: auto;
+      height: auto;
     }
 
     .cards_container {
